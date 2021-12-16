@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="da">
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-----Style---->
+    <link rel="stylesheet" href="CSS/global.css">
+    <!--------->
+    <!--Favicon-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/LOGO1.svg">
+    <!--------->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P50MG5L43Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P50MG5L43Q');
+
+    </script>
+    <!--------->
+    <!--Seo wp bliver hentet i jscript-->
+
+</head>
+
+<body>
+
+    <header>
+    </header>
+
+    <main class="">
+        <div class="tilbage"><a href="mel-produkter.html#cta-list-sortering">Tilbage</a></div>
+
+        <section class="js-product-container one-pager__container"></section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <!--FOOTER COLUMN WRAPPER-->
+        <div class="footerinfo">
+            <!--FOOTER COLUMN-->
+            <div class="footercolumn">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li><a href="tel:56974039">Tlf: 56 97 40 39</a></li>
+                    <li>
+                        <a href="mailto:aakirkebyfarveoghelse@gmail.com">Email: aakirkebyfarveoghelse@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+            <!---->
+            <div class="footercolumn">
+                <h3>Adresse</h3>
+                <a href="https://www.google.com/maps/place/Aakirkeby+Farvehandel+%26+Helseland/@55.0716694,14.9184956,17z/data=!3m1!4b1!4m5!3m4!1s0x46551249cdfe8931:0xfe00ae06bc682d0a!8m2!3d55.0716663!4d14.9206788">
+                    <ul>
+                        <li>
+                            <p>Aakirkeby Farvehandel & Helseland</p>
+                        </li>
+                        <li>
+                            <p>Jernbanegade 18 - 3720 Aakirkeby</p>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <!---->
+            <!---->
+            <div class="footercolumn">
+                <h3>Åbningstider</h3>
+                <ul>
+                    <li>
+                        <p>Mandag - Fredag 9.00 - 17.30</p>
+                    </li>
+                    <li>
+                        <p>Lørdag 9.00 - 12.00</p>
+                    </li>
+                    <li>
+                        <p>Søndag Lukket</p>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+            <!---->
+            <div class="footercolumn">
+                <!--SOCIAL MEDIA BOX-->
+                <div class="socialmediabox">
+                    <!--FOOTER SOCIALMEDIA LINK-->
+                    <a href="https://www.facebook.com/bornholmsvalsemoelle">
+                        <div class="footersocialicon">
+                            <img class="footer-social-icon" src="img/facebook.svg" alt="facebook" />
+                        </div>
+                    </a>
+                    <!---->
+                    <!---->
+                    <a href="https://www.instagram.com">
+                        <div class="footersocialicon">
+                            <img class="footer-social-icon" src="img/instagram.svg" alt="instagram" />
+                        </div>
+                    </a>
+                    <!---->
+                </div>
+                <!---->
+                <!--FIND SMILEY WRAPPER-->
+                <a href="https://www.findsmiley.dk/119235">
+                    <img class="footer-findsmiley" src="img/findsmiley.jpg" alt="kontrolrapport" />
+                </a>
+                <!---->
+            </div>
+            <!---->
+            <!--END FOOTER COLUMN-->
+        </div>
+        <!--END FOOTER COLUMN WRAPPER-->
+    </footer>
+    <!------------------------------------->
+    <!----TEMPLATE----->
+    <template class="js__template__one-pager__list-object">
+
+        <article class="product css-article-styling">
+            <img src="" alt="" class="product__image__one-pager grow">
+            <div class="css__onepage-text-section">
+                <h2 class="product__name"></h2>
+                <p class="product__long-text"></p>
+            </div>
+        </article>
+
+    </template>
+    <!--------->
+
+    <!-----JAVASCRIPT---->
+    <script src="JS/global.js"></script>
+    <script>
+        // Når DOMen er loaded, kør start funktionen --> hentMeltypeIndhold()
+        document.addEventListener("DOMContentLoaded", hentMeltypeIndhold);
+
+
+
+        // Globale variabler
+        // Produkt URL
+        const productUrl = 'https://sljfineart.com/kea/sem-4/valsemoellen/wp-json/wp/v2/meltype?slug=';
+        // Produkt template
+        const productTemplate = document.querySelector(".js__template__one-pager__list-object");
+        // Product container (Hvor produktet skal placeres på siden)
+        const productContainer = document.querySelector(".js-product-container");
+        // Produkt data
+        let product;
+
+
+        //henter name=hvedemel eks
+
+        function hentMeltypeFraURL() {
+
+            // Tag produkt URLens querystring
+            let queryString = window.location.search;
+
+            // Få fat på URLens parametre
+            let urlParams = new URLSearchParams(queryString);
+
+            // Få fat på parametret med hovedproduktets slug,
+            // så vi ved hvilket hovedprodukt vi skal hente og vise på siden
+            let melType = urlParams.get('name');
+
+            //i stedet for at kopiere
+            return melType
+        }
+
+
+
+
+        // Hent hovedprodukt data fra Wordpress
+        async function hentMeltypeIndhold() {
+            console.log('getProducts');
+            //kalder hentMeltype og får meltypen retur
+            const melType = hentMeltypeFraURL()
+            console.log(melType)
+
+            // Henter alle kategorier data fra Wordpress
+            const response = await fetch(`${productUrl}${melType}`);
+
+            // Afventer response - Konverteres til JSON og gemmes i product variablen
+            product = await response.json();
+
+            // Det data vi modtager er en array, og da vi kun henter et produkt
+            // Laver vi produktvariablen om til et object med produktdata
+            product = product[0];
+
+
+            // Vis produkt på siden --> showProduct()
+            showProduct();
+
+            // Vis SEO på siden --> showSEO()
+            showSEO();
+        }
+
+
+
+
+        // Vis produktet vi har klikket på, på siden
+        function showProduct() {
+            console.log('showProduct');
+
+            // Klon produkt template
+            const productClone = productTemplate.content.cloneNode(true);
+
+            // Indsæt produktets data i templaten i de rette HTML tags
+            // Billede URL
+            productClone.querySelector(".product__image__one-pager").src = product.billede.guid;
+            // Billede alt tekst
+            productClone.querySelector(".product__image__one-pager").alt = product.title.rendered;
+            // Produkt titel
+            productClone.querySelector(".product__name").textContent = product.title.rendered;
+            // Produktbeskrivelse
+            productClone.querySelector(".product__long-text").innerHTML = product.longtext;
+
+            // Vis produktet på siden i vores "productContainer"
+            productContainer.appendChild(productClone);
+        }
+
+
+
+        // Indsæt SEO indhold på siden fra produktet
+        function showSEO() {
+            //            console.log('showSEO');
+
+            document.querySelector("head").innerHTML += product["yoast_head"];
+
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO meta tags -->
+    <title>BORNHOLMS VALSEMØLLE | Vi samarbejder med de bedste</title>
+    <meta name="description" content="Bornholms Valsemølle samarbejder med en lang række producenter, som alle leverer korn af høj kvalitet.">
+    <meta name="keywords" content="korn, mel, landmænd, producenter, kornproduktion, lokalt">
+
+    <!----Style---------->
+    <link rel="stylesheet" href="CSS/global.css">
+    <!------------------->
+    <!--Favicon------------------------>
+    <!--safari-->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/LOGO1.png">
+    <!--alle andre browsere-->
+    <link rel="icon" type="image/png" sizes="32x32" href="img/LOGO1.svg">
+    <!-------------------------------->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P50MG5L43Q"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-P50MG5L43Q');
+
+    </script>
+    <!---------------->
+
+</head>
+
+<body>
+    <header>
+        <!--BRAND-->
+        <a href="index.html" class="brand">
+            <div class="logo-icon"></div>
+        </a>
+        <!---->
+        <!--NAV-->
+        <nav>
+            <ul id="menu" class="hidden">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="mel-produkter.html">PRODUKTER</a></li>
+                <li><a href="opskrifter.html">OPSKRIFTER</a></li>
+                <li><a href="om-os.html">OM OS</a></li>
+                <li><a class="current" href="partnere.html">PARTNERE</a></li>
+                <li><a href="kontakt.html">KONTAKT</a></li>
+            </ul>
+        </nav>
+        <!---->
+        <!--SOCIAL ICONS-->
+        <div class="icons hidden">
+            <!--SOCIALMEDIA-->
+            <a href="https://www.instagram.com/xxx/" target="_blank">
+                <img class="header-social-icon" src="img/instagram.svg" alt="instagram" />
+            </a>
+            <a href="https://www.facebook.com/pages/Bornholms-valsemølle/333460753369929" target="_blank">
+                <img class="header-social-icon" src="img/facebook.svg" alt="facebook" />
+            </a>
+            <!---->
+        </div>
+        <!---->
+        <!--MOBILE MENU ICON-->
+        <div id="menubutton">
+            <img class="header-menu-icon" src="img/burger-menu-icon.svg" alt="Menu icon" />
+        </div>
+        <!---->
+    </header>
+
+
+    <main class="">
+
+        <!--SECTION SPLASH-->
+        <section class="hero-image">
+            <img class="hero-video" src="img/splash-partner.png" alt="historien">
+            <div class="hero-overlay"></div>
+            <section class="titletext">
+                <!--CATAGORY WRAPPER-->
+                <h1>PARTNERE</h1>
+                <!--END catagory wrapper-->
+            </section>
+        </section>
+        <!----------------->
+        <!----SECTION PARTNER----->
+        <section class="two-column-section">
+            <div class="two-column-sides">
+                <div class="two-column-text">
+                    <h2>PARTNERE</h2>
+                    <p>Bornholms Valsemølle samarbejder med en lang række kornleverandører og melaftagere/forhandlere. Ud over den landsdækkende grovvarevirksomhed DLG, der leverer konventionelt dyrket bornholmsk hvede og rug, har Bornholms Valsemølle entreret direkte med udvalgte bornholmske landmænd om levering af diverse kornsorter.Møllens produkter afsættes direkte til bagerier og lokale virksomheder og distribueres gennem engrosled til forbrugere i det øvrige land.</p>
+                </div>
+                <div class="two-column-image">
+                    <img src="img/forhandler-foto.png" alt="eco">
+                </div>
+            </div>
+        </section>
+        <!--------->
+        <!-----SECTION PARTNER SORTERING---->
+        <section id="leverandor" class="product-sektion">
+            <section>
+                <div class="category-list-container">
+                    <ul class="category-list">
+                        <li class="category-list__item">
+                            <a href="alle-produkter.html?filter=alle-produkter" class="category-list__link js-category-button" data-category="alle-produkter">
+                                <div class="category-list__icon-container">
+                                    <img src="img/ikoner-alle.svg" alt="alle-partnere" class="category-list__icon">
+                                </div>
+                                <h3 class="category-list__category-title">Alle partnere</h3>
+                            </a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="alle-produkter.html?filter=alle-produkter" class="category-list__link js-category-button" data-category="leverandor">
+                                <div class="category-list__icon-container">
+                                    <img src="img/ikoner-leverendor.svg" alt="leverandører" class="category-list__icon">
+                                </div>
+                                <h3 class="category-list__category-title">Leverendøre</h3>
+                            </a>
+                        </li>
+                        <li class="category-list__item">
+                            <a href="alle-produkter.html?filter=konventionel" class="category-list__link js-category-button" data-category="forhandler">
+                                <div class="category-list__icon-container">
+                                    <img src="img/ikoner-forhandler.svg" alt="forhandlere" class="category-list__icon">
+                                </div>
+                                <h3 class="category-list__category-title">Forhandlere</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="products">
+                <div class="container_products">
+                    <div class="product-list js-product-list"></div>
+                </div>
+            </section>
+        </section>
+        <!--------->
+
+    </main>
+
+
+    <!--FOOTER-->
+    <footer>
+        <!--FOOTER COLUMN WRAPPER-->
+        <div class="footerinfo">
+            <!--FOOTER COLUMN-->
+            <div class="footercolumn">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li><a href="tel:56974039">Tlf: 56 97 40 39</a></li>
+                    <li>
+                        <a href="mailto:info@bornholms-valsemoelle.dk">Email: info@bornholms-valsemoelle.dk</a>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+            <!---->
+            <div class="footercolumn">
+                <h3>Adresse</h3>
+                <a href="https://goo.gl/maps/pf2UzgVoK2p7RSEB6">
+                    <ul>
+                        <li>
+                            <p>Bornholm Valsemølle A/S</p>
+                        </li>
+                        <li>
+                            <p>Møllebakken 5, 3720 Aakirkeby</p>
+                        </li>
+                    </ul>
+                </a>
+            </div>
+            <!---->
+            <!---->
+            <div class="footercolumn">
+                <h3>Åbningstider</h3>
+                <ul>
+                    <li>
+                        <p>Mandag - Fredag 8.00 - 14.30</p>
+                    </li>
+                    <li>
+                        <p>Lørdag Lukket</p>
+                    </li>
+                    <li>
+                        <p>Søndag Lukket</p>
+                    </li>
+                </ul>
+            </div>
+            <!---->
+            <!---->
+            <div class="footercolumn">
+                <!--SOCIAL MEDIA BOX-->
+                <div class="socialmediabox">
+                    <!--FOOTER SOCIALMEDIA LINK-->
+                    <a href="https://www.facebook.com/bornholmsvalsemoelle">
+                        <div class="footersocialicon">
+                            <img class="footer-social-icon" src="img/facebook.svg" alt="facebook" />
+                        </div>
+                    </a>
+                    <!---->
+                    <!---->
+                    <a href="https://www.instagram.com">
+                        <div class="footersocialicon">
+                            <img class="footer-social-icon" src="img/instagram.svg" alt="instagram" />
+                        </div>
+                    </a>
+                    <!---->
+                </div>
+                <!---->
+                <!--FIND SMILEY WRAPPER-->
+                <a href="https://www.findsmiley.dk/119235">
+                    <img class="footer-findsmiley" src="img/findsmiley.jpg" alt="kontrolrapport" />
+                </a>
+                <!---->
+            </div>
+            <!---->
+            <!--END FOOTER COLUMN-->
+        </div>
+        <!--END FOOTER COLUMN WRAPPER-->
+    </footer>
+    <!---->
+
+    <!--LIST OBJECT TEMPLATE-->
+    <template class="js-template-partner">
+        <article class="js-partner">
+            <!--lav div herunder om til a-tag hvis du vil implementerer one-pager til partnerne-->
+            <div href="#" class="js-partner__link" data-product-id="">
+                <div class="css__list-object__image-container">
+                    <img class="partner__image" src="#" alt="#">
+                </div>
+                <h3 class="partner__name"></h3>
+            </div>
+            <p class="css__partner__price-text"><span class="partner__kategori"></span> </p>
+            <p class="product__short-text"><span class="short-text"></span></p>
+        </article>
+    </template>
+    <!------------------------->
+
+    <!---------JAVA SCRIPT---------------->
+    <script src="JS/global.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", init);
+
+        // Opretter globale variabler
+        let findCategory;
+        let products;
+        let categories;
+
+        // Får fat på vores boks, hvor vores H1 med kategorinavn og kategoribeskrivelse skal indsættes
+        //        const categoryBox = document.querySelector(".js-category-box");
+        // Får fat på vores categoryBox template
+        //        const categoryBoxTemplate = document.querySelector(".t-category-box");
+
+        // Kategori og produkt URL
+        const categoriesUrl = 'https://sljfineart.com/kea/sem-4/valsemoellen/wp-json/wp/v2/categories';
+        const productsUrl = 'https://sljfineart.com/kea/sem-4/valsemoellen/wp-json/wp/v2/partner?per_page=100';
+        const productTemplate = document.querySelector(".js-template-partner");
+        const productList = document.querySelector(".js-product-list");
+
+
+        //tager hele urlen ...alle-produkter.html?filter=alle-produkter
+        let queryString = window.location.search;
+        //tager kon sidste del af urlen fra ?filter
+        let urlParams = new URLSearchParams(queryString);
+        //finder det aktive filter
+        let urlFilter = urlParams.get('filter');
+
+        let filter;
+
+        //har sat ...alle-produkter.html uden filter til altid at have filteret alle produkter
+        //ellers er den lig med det filter man har valgt
+        if (urlFilter === null) {
+            filter = "alle-produkter";
+        } else {
+            filter = urlFilter;
+        }
+
+        //giver den klikkede button en farve
+        document.querySelector(`.js-category-button[data-category="${filter}"]`).classList.add("button-clicked");
+
+
+
+        async function init() {
+            await getCategories();
+            initCategoryButtons();
+        }
+
+
+        // Henter alle produktkategorier
+        async function getCategories() {
+            console.log('getCategories');
+
+            // Bruger fetch API til at hente JSON data
+            const response = await fetch(categoriesUrl);
+            // Afventer data, laves om til JSON som Javascript kan forstå og gemmes i global variabel kaldet categories
+            categories = await response.json();
+
+            // Henter alle produkter --> getProducts()
+            getProducts();
+        }
+
+
+        async function getProducts() {
+            console.log('getProducts');
+
+            const response = await fetch(productsUrl);
+            products = await response.json();
+            console.log(products);
+
+            showProducts(products);
+        }
+
+
+        function showProducts(products) {
+            console.log('showProducts');
+
+            // Nulstil produktlisten man ligger den nye filtrering oveni hvis ikke man nulstiller
+            productList.innerHTML = '';
+
+            //finder den kategori i vores kategorivariabel der har den samme slug navn som vores filter i urlen
+            findCategory = categories.find(category => category.slug === filter);
+
+
+            // Opdaterer URL'en med det nye filter parametre :)
+            window.history.replaceState(null, null, `?filter=${filter}`);
+
+            // Loop igennem alle produkter hver gang der klikkes paa ny kategori
+            products.forEach(product => {
+
+                //herfra til og med if  / dette gores da nogle af varerne har mere end en kategori, saa produkterne kan blive vist i mere en en kategori
+                //array
+                let productCategoriesList = [];
+                //looper dette produkts kategori ider igennem
+                product.categories.forEach((category, index) => {
+
+                    let findProductCategory = categories.find(productCategory => productCategory.id === category);
+
+                    console.log('findProductCategory', findProductCategory);
+                    //ideerne pushes til produktkategorilisten
+                    //ikke lig med null
+                    if (findProductCategory !== null) {
+                        productCategoriesList.push(findProductCategory);
+                    }
+                });
+
+                //sorger for at det kun er produkter inden for en hvis kategori der vises
+                //hvis filteret passer til en af de kategorier eller flere der er tilfojet til produktet saa skal det vises og ellers ikke
+                let findMatch = productCategoriesList.find(category => category.slug === filter);
+
+                if (filter === 'alle-produkter' || findMatch !== undefined) {
+                    //productTemplate - find template / content - tag kun indholdet / cloneNode(true) - tag en kopi
+                    const productClone = productTemplate.content.cloneNode(true);
+                    //alt under bliver sat ind i templaten ovenover
+                    productClone.querySelector(".js-partner").setAttribute('data-product-id', product.id);
+                    productClone.querySelector(".js-partner__link").href = `produkt.html?name=${product.slug}`;
+                    productClone.querySelector(".partner__image").src = product.billede.guid;
+                    productClone.querySelector(".partner__image").alt = product.title.rendered;
+                    productClone.querySelector(".partner__name").textContent = product.title.rendered;
+
+                    //productClone.querySelector(".product__category-link").textContent = productCategoriesList[0].name;
+                    //productClone.querySelector(".product__category-link").href = `alle-produkter.html?filter=${productCategoriesList[0].slug}`;
+                    productClone.querySelector(".partner__kategori").textContent = product.partnere;
+                    productClone.querySelector(".product__short-text").textContent = product.partnertext;
+                    //saa vi har en template, vi udfylder den med information og den vises paa siden som en child i produktlisten, kassen til formaalet.
+                    productList.appendChild(productClone);
+
+                }
+            });
+
+            // Vis SEO --> showSEO()
+            showSEO();
+
+            // Vis kategorinavn som H1 og kategoribeskrivelse som p tag i vores categorybox --> createCategoryBox(filter) tager filter med som en parameter
+            createCategoryBox(filter);
+        }
+
+
+
+        function initCategoryButtons() {
+            console.log('initCategoryButtons');
+            //tager fat i alle kategoriknapper - alle buttons bliver lagt ind som en array i variablen kategorybuttons
+            const categoryButtons = document.querySelectorAll(".js-category-button");
+            //for hver knap man trykker paa bliver man fort til filterProducts funktionen
+            categoryButtons.forEach(categoryButton => {
+
+                categoryButton.addEventListener("click", filterProducts);
+            });
+        }
+
+
+
+        function filterProducts(event) {
+            console.log(this);
+            //dynamisk
+            event.preventDefault();
+            //vores filter skal laves om til det der er klikket paa - til vores kategoridata atribut: data=categori="tasker" f.eks
+            filter = this.dataset.category;
+            console.log('filter', filter);
+            //fjerner og tilfojer farven paa kliket knap
+            document.querySelectorAll(".js-category-button").forEach(category => category.classList.remove("button-clicked"));
+            this.classList.add("button-clicked");
+            //viddere til ny kategori
+            showProducts(products);
+        }
+
+
+        function createCategoryBox(category) {
+            console.log('createCategoryBox');
+            console.log('category', category);
+
+            // Nulstil kategorinavn og kategoribeskrivelse
+            categoryBox.innerHTML = "";
+
+            //cloner template
+            const categoryBoxClone = categoryBoxTemplate.content.cloneNode(true);
+            //udfylder
+            categoryBoxClone.querySelector(".category-box__title").textContent = findCategory.name;
+            categoryBoxClone.querySelector(".category-box__description").textContent = findCategory.description;
+            //indsaater som child i templaten 
+            categoryBox.appendChild(categoryBoxClone);
+        }
+
+
+        //        function showSEO() {
+        // console.log('showSEO');
+        //
+        // console.log('SEO', findCategory);
+        // // Indsæt title tag
+        // document.querySelector("title").textContent = findCategory.seo_titletag;
+        // // Indsæt meta description
+        // let metaDescription = document.querySelector("meta[name='description']").setAttribute("content", findCategory.seo_metadescription);
+        //
+        // // Indsæt Facebook meta title tags
+        // // FB Title tag
+        // document.querySelector("meta[property='og:title']").setAttribute("content", findCategory.seo_titletag);
+        // // FB description tag
+        // document.querySelector("meta[property='og:description']").setAttribute("content", findCategory.seo_metadescription);
+        // // FB Image tag
+        // document.querySelector("meta[property='og:image']").setAttribute("content", findCategory.seo_image.guid);
+        // // FB Website url tag
+        // document.querySelector("meta[property='og:url']").setAttribute("content", window.location.href);
+        // }
+
+    </script>
+</body>
+
+</html>
